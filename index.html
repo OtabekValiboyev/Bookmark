@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
   <!-- SITE-HEADER -->
@@ -19,16 +21,77 @@
         <img class="header__logo" src="img/logo.svg" alt="site logo" width="150" height="25">
       </a>
       <nav class="sitenav">
-          <ul class="sitenav__list">
-            <li class="sitenav__item"><a href="#" class="sitenav__link">FEATURES</a></li>
-            <li class="sitenav__item"><a href="#" class="sitenav__link">PRICING</a></li>
-            <li class="sitenav__item"><a href="#" class="sitenav__link">CONTACT</a></li>
-          </ul>
+        <ul class="sitenav__list">
+          <li class="sitenav__item"><a href="#" class="sitenav__link">FEATURES</a></li>
+          <li class="sitenav__item"><a href="#" class="sitenav__link">PRICING</a></li>
+          <li class="sitenav__item"><a href="#" class="sitenav__link">CONTACT</a></li>
+        </ul>
       </nav>
       <a class="button button-small-header" href="#">login</a>
     </div>
   </header>
 
+  <main class="main-content">
+
+    <!-- SITE-HERO -->
+    <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <h2 class="hero__heading">A Simple Bookmark Manager</h2>
+          <p class="hero__text">A clean and simple interface to organize your favourite websites. Open a new browser tab
+            and see your sites load instantly. Try it for free.</p>
+          <div class="hero__buttons">
+            <a class="button" href="#">Get it on Chrome</a>
+            <a class="button button-white" href="#">Get it on Firefox</a>
+          </div>
+        </div>
+        <img class="hero__img" src="img/hero-img.svg" alt="hero-img" width="578" height="385">
+      </div>
+    </section>
+
+    <!-- SITE-FEATURE -->
+    <section class="feature">
+      <div class="feature__container container">
+        <h2 class="feature__heading">Features</h2>
+        <p class="feature__text">Our aim is to make it quick and easy for you to access your favourite websites. Your
+          bookmarks sync between your devices so you can access them on the go.</p>
+        <ul class="feature__list">
+          <li class="feature__item feature__item-active"><a class="feature__link" href="#">Simple Bookmarking</a></li>
+          <li class="feature__item"><a class="feature__link" href="#">Speedy Searching</a></li>
+          <li class="feature__item"><a class="feature__link" href="#">Easy Sharing</a></li>
+        </ul>
+        <div class="feature__box feature__box-active">
+          <img class="feature__box-img" src="img/feature-box-one-img.svg" alt="image" width="536" height="346">
+          <div class="feature__content">
+            <h2 class="feature__title">Bookmark in one click</h2>
+            <p class="feature__description">Organize your bookmarks however you like. Our simple drag-and-drop interface
+              gives you complete control over how you manage your favourite sites.</p>
+            <a class="button" href="#">More Info</a>
+          </div>
+        </div>
+        <div class="feature__box">
+          <img class="feature__box-img" src="img/feature-box-two-img.svg" alt="image" width="468" height="393">
+          <div class="feature__content">
+            <h2 class="feature__title">Bookmark in one click</h2>
+            <p class="feature__description">Organize your bookmarks however you like. Our simple drag-and-drop interface
+              gives you complete control over how you manage your favourite sites.</p>
+            <a class="button" href="#">More Info</a>
+          </div>
+        </div>
+        <div class="feature__box">
+          <img class="feature__box-one-img" src="img/feature-box-three-img.svg" alt="image" width="440" height="380">
+          <div class="feature__content">
+            <h2 class="feature__title">Intelligent search</h2>
+            <p class="feature__description">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+            <a class="button" href="#">More Info</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
   <script src="js/main.js"></script>
 </body>
+
 </html>
