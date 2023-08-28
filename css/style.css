@@ -82,11 +82,21 @@ img {
   font-weight: 500;
   line-height: 28px;
   letter-spacing: 0.25px;
+  transition: opacity 0.4s ease;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.6;
 }
 
 .button-white {
   opacity: 0.75;
   background-color: #f7f7f7;
+  color: #242a45;
 }
 
 .button-red {
@@ -98,10 +108,134 @@ img {
   padding-bottom: 11px;
   padding-left: 34px;
   padding-right: 32px;
-  border-radius: 5px;
   background-color: var(--accent-color-red);
+  color: #fff;
+  text-align: right;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 1.5px;
 }
 
 .button-big {
   padding: 10px 35px;
 }
+
+
+/* SITE-HEADER */
+.header {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: #fff;
+}
+
+.hewader__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-link {
+  display: flex;
+  margin-right: auto;
+}
+
+.header__logo {
+  width: 150px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.sitenav {
+  margin-right: 48px;
+}
+
+.sitenav__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 44px;
+}
+
+.sitenav__link {
+  color: #242A45;
+  text-align: right;
+  font-family: var(--font);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  /* 130.769% */
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  transition: color 0.4s ease,
+    opacity 0.4s ease;
+}
+
+.sitenav__link:hover {
+  color: var(--accent-color-blue);
+}
+
+.sitenav__link:active {
+  opacity: 0.6;
+}
+
+
+/* SITE-HERO */
+.hero {
+  padding-top: 61px;
+  padding-bottom: 180px;
+  background-image: url(../img/hero-Rectangle.svg);
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 695px) top 190px;
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0;
+}
+
+.hero__content {
+  width: 100%;
+  max-width: 540px;
+}
+
+.hero__heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #242A45;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: -0.15px;
+}
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 32px;
+  color: #242A45;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 0.5;
+}
+
+.hero__buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.button {}
+
+.button-white {}
+
+.hero__img {}
