@@ -131,7 +131,7 @@ img {
   background-color: #fff;
 }
 
-.hewader__container {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -458,7 +458,7 @@ img {
   margin-bottom: 32px;
 }
 
-.apllication__title {
+.application__item-title {
   margin-top: 0;
   margin-bottom: 6px;
   font-size: 20px;
@@ -468,7 +468,7 @@ img {
   letter-spacing: 0.25px;
 }
 
-.application__description {
+.application__item-description {
   margin-top: 0;
   margin-bottom: 32px;
   color: #242a45;
