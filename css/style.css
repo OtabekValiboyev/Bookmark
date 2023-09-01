@@ -139,6 +139,15 @@ img {
 .header__logo-link {
   display: flex;
   margin-right: auto;
+  transition: opacity 0.4s ease;
+}
+
+.header__logo-link:hover {
+  opacity: 0.8;
+}
+
+.header__logo-link:active {
+  opacity: 0.6;
 }
 
 .header__logo {
@@ -243,6 +252,9 @@ img {
 /* SITE-FEATURE */
 .feature {
   padding-bottom: 150px;
+  background-image: url(../img/hero-Rectangle.svg);
+  background-repeat: no-repeat;
+  background-position: left -395px top 433px;
 }
 
 .feature__container {
@@ -289,16 +301,17 @@ img {
 }
 
 .feature__item {
-  padding: 27px 40px;
+  width: 243px;
+  border-bottom: 1px solid rgba(73, 93, 207, 0.2);
 }
 
-.feature__item-active {
-  border-bottom: 4px solid var(--accent-color-red);
-}
 
 .feature__link {
-  display: inline-block;
+  display: block;
   color: #242a45;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  border-bottom: 4px solid transparent;
   text-align: center;
   font-family: var(--font);
   font-size: 16px;
@@ -307,6 +320,22 @@ img {
   line-height: 17px;
   letter-spacing: 0.533px;
   text-decoration: none;
+  opacity: 0.75;
+  transition: color 0.4s ease,
+    opacity 0.4s ease;
+}
+
+.feature__item--active .feature__link {
+  border-color: var(--accent-color-red);
+  opacity: 1;
+}
+
+.feature__link:hover {
+  color: var(--accent-color-red);
+}
+
+.feature__link:active {
+  opacity: 0.75;
 }
 
 .feature__box {
@@ -439,8 +468,12 @@ img {
   letter-spacing: 0.25px;
 }
 
-.application__description {}
-
-.button {}
-
-.button-big {}
+.application__description {
+  margin-top: 0;
+  margin-bottom: 32px;
+  color: #242a45;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
