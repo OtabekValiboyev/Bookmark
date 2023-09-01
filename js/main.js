@@ -25,10 +25,13 @@ elsTabLink.forEach(function (elTabLink) {
     //Activity has been removed from tab box
     deactivateTabBox();
 
-    const activePanel = document.querySelector(`#${elTabLink.href.split('#')[1]}`);
+    // const activePanel = document.querySelector(`#${elTabLink.href.split('#')[1]}`);
+    const activePanel = document.querySelector(elTabLink.dataset.tabBox);
     activePanel.classList.add('feature__box-active')
 
     //Added active class when tab items are active
     elTabLink.parentElement.classList.add('feature__item--active');
+
+    console.log(elTabLink.dataset.tabBox);
   })
 })
