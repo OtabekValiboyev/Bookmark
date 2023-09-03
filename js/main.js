@@ -2,17 +2,28 @@ const elsTabsItem = document.querySelectorAll('.feature__item');
 const elsTabLink = document.querySelectorAll('.js-feature-link');
 const elsTabBox = document.querySelectorAll('.feature__box');
 
+const elsAccordionItem = document.querySelectorAll('.accordion__item');
+const elsAccordionTogler = document.querySelectorAll('.js-accordion-button');
+
 function deactivateTabItems() {
   elsTabsItem.forEach(function (elTabItem) {
-    elTabItem.classList.remove('feature__item--active')
+    elTabItem.classList.remove('feature__item--active');
   });
-}
+};
 
 function deactivateTabBox() {
   elsTabBox.forEach(function (elTabBox) {
-    elTabBox.classList.remove('feature__box-active')
+    elTabBox.classList.remove('feature__box-active');
   });
-}
+};
+
+function closeAccordionItem() {
+  elsAccordionItem.forEach(function (elAccordionItem) {
+    elAccordionItem.addEventListener('click', function () {
+      elAccordionItem.classList.remove('accordion__item--open');
+    })
+  });
+};
 
 elsTabLink.forEach(function (elTabLink) {
   elTabLink.addEventListener('click', function (evt) {
@@ -31,7 +42,15 @@ elsTabLink.forEach(function (elTabLink) {
 
     //Added active class when tab items are active
     elTabLink.parentElement.classList.add('feature__item--active');
-
-    console.log(elTabLink.dataset.tabBox);
   })
-})
+});
+
+elsAccordionTogler.forEach(function (elAccordionTogler) {
+  elAccordionTogler.addEventListener('click', function () {
+    console.log('test');
+
+    // closeAccordionItem();
+
+    // elAccordionTogler.closest('.accordion__item').classList.add('accordion__item--open')
+  })
+});
