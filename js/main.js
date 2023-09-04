@@ -47,10 +47,10 @@ elsTabLink.forEach(function (elTabLink) {
 
 elsAccordionTogler.forEach(function (elAccordionTogler) {
   elAccordionTogler.addEventListener('click', function () {
-    console.log('test');
+    // console.log('test');
 
-    // closeAccordionItem();
+    closeAccordionItem();
 
-    // elAccordionTogler.closest('.accordion__item').classList.add('accordion__item--open')
+    elAccordionTogler.closest('.accordion__item').classList.add('accordion__item--open');
   })
 });
