@@ -19,9 +19,7 @@ function deactivateTabBox() {
 
 function closeAccordionItem() {
   elsAccordionItem.forEach(function (elAccordionItem) {
-    elAccordionItem.addEventListener('click', function () {
-      elAccordionItem.classList.remove('accordion__item--open');
-    })
+    elAccordionItem.classList.remove('accordion__item--open');
   });
 };
 
