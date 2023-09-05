@@ -161,7 +161,7 @@ img {
   align-items: center;
 }
 
-.accordion__item-header:hover  .accordion__item-title {
+.accordion__item-header:hover .accordion__item-title {
   color: var(--accent-color-red);
 }
 
@@ -633,4 +633,79 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
+}
+
+/* SUBSCRIPTION */
+.subscription {
+  padding-top: 58px;
+  padding-bottom: 74px;
+  background-color: #5267df;
+  color: #fff;
+}
+
+.subscription__inner {
+  width: 100%;
+  max-width: 442px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscription__text {
+  margin-top: 0;
+  margin-bottom: 24px;
+  text-align: center;
+  font-family: var(--font);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.subscription__title {
+  margin-top: 0;
+  margin-bottom: 36px;
+  text-align: center;
+  font-family: var(--font);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.1px;
+}
+
+.form {}
+
+.form__inner {
+  display: flex;
+  align-items: center;
+  border: 1px solid #000;
+}
+
+.form__fields {
+  height: 100%;
+  border: 1px solid #000;
+  margin-right: 25px;
+  flex-grow: 1;
+}
+
+.form__field {}
+
+.form__fields-error {
+  display: none;
+}
+
+.form__button {
+  background-color: var(--accent-color-red);
+}
+
+.form__button:hover {
+  background-color: #fff;
+  color: var(--accent-color-red);
+  border: 2px solid var(--accent-color-red);
+}
+
+.form__button:active {
+  opacity: 0.8;
 }
