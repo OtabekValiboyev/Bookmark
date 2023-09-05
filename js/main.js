@@ -1,3 +1,9 @@
+const modifiers = {
+  featureItemActive: 'feature__item--active',
+  accordionItemOpen: 'accordion__item--open'
+}
+
+
 const elsTabsItem = document.querySelectorAll('.feature__item');
 const elsTabLink = document.querySelectorAll('.js-feature-link');
 const elsTabBox = document.querySelectorAll('.feature__box');
@@ -7,7 +13,7 @@ const elsAccordionTogler = document.querySelectorAll('.js-accordion-button');
 
 function deactivateTabItems() {
   elsTabsItem.forEach(function (elTabItem) {
-    elTabItem.classList.remove('feature__item--active');
+    elTabItem.classList.remove(modifiers.featureItemActive);
   });
 };
 
@@ -19,7 +25,7 @@ function deactivateTabBox() {
 
 function closeAccordionItem() {
   elsAccordionItem.forEach(function (elAccordionItem) {
-    elAccordionItem.classList.remove('accordion__item--open');
+    elAccordionItem.classList.remove(modifiers.accordionItemOpen);
   });
 };
 
@@ -39,7 +45,7 @@ elsTabLink.forEach(function (elTabLink) {
     activePanel.classList.add('feature__box-active')
 
     //Added active class when tab items are active
-    elTabLink.parentElement.classList.add('feature__item--active');
+    elTabLink.parentElement.classList.add(modifiers.featureItemActive);
   })
 });
 
@@ -49,6 +55,6 @@ elsAccordionTogler.forEach(function (elAccordionTogler) {
 
     closeAccordionItem();
 
-    elAccordionTogler.closest('.accordion__item').classList.add('accordion__item--open');
+    elAccordionTogler.closest('.accordion__item').classList.add(modifiers.accordionItemOpen);
   })
 });
